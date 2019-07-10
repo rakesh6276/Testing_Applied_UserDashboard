@@ -71,6 +71,8 @@ constructor(private http:HttpClient,private cookie:CookieService
     //   }).catch(this.handleError)
     // }
 
+    // FOr indivisual tool Information page 
+
     sendIdGetToolPage(id){
       return this.http.get(this.apiRoot+'/api/baytool/?bid='+id).map((response:Response)=>{
         return response;
