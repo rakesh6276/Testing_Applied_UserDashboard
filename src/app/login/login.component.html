@@ -6,7 +6,7 @@
 <div class="col-md-12 col-md-offset-6 loginBox">
 
     <!-- <img src="./images/applied.png" class="user"> -->
-    <form #bayForm="ngForm" (ngSubmit)="submit(login)">
+    <form #bayForm="ngForm">
       <!-- <p>Email</p> -->
       <div class="form-group"
       [ngClass]="{
@@ -23,9 +23,8 @@
         
       </div>  
       <!-- <p>Password</p> -->
-      <div class="form-group">
-      <input type="Password"  class="form-control" 
-      [(ngModel)]="login.password"
+      <div  class="form-group">
+      <input type="Password"  class="form-control" [(ngModel)]="login.password"
        name="password" placeholder="Enter Password" required>
        </div>
       <button type="submit" class="btn myButton2" [disabled]="bayForm.invalid">Login</button>
@@ -43,7 +42,6 @@
    {{messageresponse}}
   </div>
 </ng-template>
-
 
 
 
