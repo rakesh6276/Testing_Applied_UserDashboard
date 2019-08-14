@@ -167,43 +167,6 @@
                                         'has-error':group.invalid && (group.dirty || group.touched),
                                         'has-success':group.valid && (group.dirty || group.touched)
                                     }">
-
-
-
-
-                                    <button id="button" class="btn btn-primary btn-lg"
-                                    data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>
-                                   Add group </button>
-                                       
-                                   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                       <div class="modal-dialog">
-                                           
-                                         <div class="modal-content">
-                                           <div class="modal-header">
-                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                             <label>Group</label>
-                                             <input type="text" 
-                                               class="form-control" 
-                                               name="group" id="user_group" 
-                                               placeholder="Enter Group Name" >
-                                           </div>
-                                           <button type="submit" 
-                                           class="btn btn-success" 
-                                           (click)="newuser.hide();heroForm.rest()"
-                                            style="margin-left: 251px;color:black;font-family: Bree serif;
-                                            font-size: 16px;">Submit</button>
-                                           <div class="modal-body">
-                                           </div>
-                                           <div class="modal-footer">
-                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                           </div>
-                                         </div>
-                                       </div>
-                                     </div>
-
-
-
-
                                           <select name="category" class="form-control"
                                             [(ngModel)]="users.group" required #group="ngModel"
                                              style="width: 160px;
