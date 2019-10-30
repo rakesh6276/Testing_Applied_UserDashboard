@@ -830,41 +830,41 @@ export class BayhomeComponent implements OnInit {
                             }
                             })
 
-                        this.bay39A =  this._toolsListed.filter(data=>{
-                          return data.bay_number=='39A' && data.is_active == true
+                        this.bay39 =  this._toolsListed.filter(data=>{
+                          return data.bay_number=='39' && data.is_active == true
                         });
-                          this.bay39A.forEach(function (value) {
+                          this.bay39.forEach(function (value) {
                           if(value.status === 'IN'){
-                            $('#bay39A').css({fill: "#ffff80"});
+                            $('#bay39').css({fill: "#ffff80"});
                           }
                           else if (value.status === 'ID') {
-                            $('#bay39A').css({fill: "#ff7f7f"});
+                            $('#bay39').css({fill: "#ff7f7f"});
                           }
                           else if (value.status === 'PR') {
-                            $('#bay39A').css({fill: "#c2de80"});
+                            $('#bay39').css({fill: "#c2de80"});
                           }
                           else if (value.status === 'MA') {
-                            $('#bay39A').css({fill: "#9ac3f5"});
+                            $('#bay39').css({fill: "#9ac3f5"});
                           }
                           })
 
-                          this.bay39B =  this._toolsListed.filter(data=>{
-                            return data.bay_number=='39B' && data.is_active == true
-                          });
-                            this.bay39B.forEach(function (value) {
-                            if(value.status === 'IN'){
-                              $('#bay39B').css({fill: "#ffff80"});
-                            }
-                            else if (value.status === 'ID') {
-                              $('#bay39B').css({fill: "#ff7f7f"});
-                            }
-                            else if (value.status === 'PR') {
-                              $('#bay39B').css({fill: "#c2de80"});
-                            }
-                            else if (value.status === 'MA') {
-                              $('#bay39B').css({fill: "#9ac3f5"});
-                            }
-                            })
+                       //  this.bay39B =  this._toolsListed.filter(data=>{
+                       //   return data.bay_number=='39B' && data.is_active == true
+                       //  });
+                       //     this.bay39B.forEach(function (value) {
+                       //     if(value.status === 'IN'){
+                       //       $('#bay39B').css({fill: "#ffff80"});
+                       //     }
+                       //     else if (value.status === 'ID') {
+                       //       $('#bay39B').css({fill: "#ff7f7f"});
+                       //     }
+                       //     else if (value.status === 'PR') {
+                       //       $('#bay39B').css({fill: "#c2de80"});
+                       //     }
+                       //     else if (value.status === 'MA') {
+                       //       $('#bay39B').css({fill: "#9ac3f5"});
+                       //     }
+                       //     })
 
                           // this.bay40 =  this._toolsListed.filter(data=>{
                           //   return data.bay_number==40 && data.is_active == true
