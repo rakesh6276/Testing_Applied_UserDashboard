@@ -266,7 +266,7 @@ return day + ' ' + monthNames[monthIndex] + ' ' + year;
     // console.log(trend);
     // this.callDateApply1(trend);
     
-    // let downloadurl = 'http://127.0.0.1:8000/api/export_tool_xls/?start_date=' + picker.startDate.format('YYYY-MM-DD') +'&end_date='+ picker.endDate.format('YYYY-MM-DD');
+    // let downloadurl = 'http://152.135.122.61:8871/api/export_tool_xls/?start_date=' + picker.startDate.format('YYYY-MM-DD') +'&end_date='+ picker.endDate.format('YYYY-MM-DD');
     // this._service.sendDateGetReprts(trend).subscribe(data=>{
     //   console.log(data);
     //   window.open(downloadurl);
