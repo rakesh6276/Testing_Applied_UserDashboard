@@ -146,6 +146,13 @@ return day + ' ' + monthNames[monthIndex] + ' ' + year;
                 stacking: 'percent'
             }
         },
+
+        //remove highcharts watermark
+
+        credits: {
+            enabled: false
+         },
+
         series: [{
             name: 'Idle',
             data:_iddata,
@@ -185,6 +192,13 @@ return day + ' ' + monthNames[monthIndex] + ' ' + year;
             headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
             pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
         },
+
+    
+    //remove highcharts watermark
+
+        credits: {
+            enabled: false
+         },
     
         "series": [
             {
