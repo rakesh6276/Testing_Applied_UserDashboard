@@ -1261,7 +1261,7 @@ this.http.get(this.apiRoot+'/api/tool_category_data/54/').subscribe(data =>{
     })
 
 
- this.http.get(this.apiRoot+'/api/tool_category_data/101/').subscribe(data =>{
+ this.http.get(this.apiRoot+'/api/tool_category_data/112/').subscribe(data =>{
       this._labListed32 = data as [any];
       if (this._labListed32.Tool_efficiency === false) {
         $('#lab32').css({fill: "rgba(239, 9, 9, 0.78)"});
@@ -1294,7 +1294,7 @@ this.http.get(this.apiRoot+'/api/tool_category_data/54/').subscribe(data =>{
     })
 
 
-    this.http.get(this.apiRoot+'/api/tool_category_data/101/').subscribe(data =>{
+    this.http.get(this.apiRoot+'/api/tool_category_data/112/').subscribe(data =>{
       this._labListed33 = data as [any];
       if (this._labListed33.Tool_efficiency === false) {
         $('#lab33').css({fill: "rgba(239, 9, 9, 0.78)"});
