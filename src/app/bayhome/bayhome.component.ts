@@ -143,6 +143,63 @@ export class BayhomeComponent implements OnInit {
                 }
                 })
 
+                this.bay6A =  this._toolsListed.filter(data=>{
+                  return data.bay_number=='6A' && data.is_active == true
+                });
+                  this.bay6A.forEach(function (value) {
+                  if(value.status === 'IN'){
+                    $('#bay6A').css({fill: "#ffff80"});
+                  }
+                  else if (value.status === 'ID') {
+                    $('#bay6A').css({fill: "#ff7f7f"});
+                  }
+                  else if (value.status === 'PR') {
+                    $('#bay6A').css({fill: "#c2de80"});
+                  }
+                  else if (value.status === 'MA') {
+                    $('#bay6A').css({fill: "#9ac3f5"});
+                  }
+                  })
+
+                  this.bay6B =  this._toolsListed.filter(data=>{
+                    return data.bay_number=='6B' && data.is_active == true
+                  });
+                    this.bay6B.forEach(function (value) {
+                    if(value.status === 'IN'){
+                      $('#bay6B').css({fill: "#ffff80"});
+                    }
+                    else if (value.status === 'ID') {
+                      $('#bay6B').css({fill: "#ff7f7f"});
+                    }
+                    else if (value.status === 'PR') {
+                      $('#bay6B').css({fill: "#c2de80"});
+                    }
+                    else if (value.status === 'MA') {
+                      $('#bay6B').css({fill: "#9ac3f5"});
+                    }
+                    })
+
+                    this.bay6C =  this._toolsListed.filter(data=>{
+                      return data.bay_number=='6C' && data.is_active == true
+                    });
+                      this.bay6C.forEach(function (value) {
+                      if(value.status === 'IN'){
+                        $('#bay6C').css({fill: "#ffff80"});
+                      }
+                      else if (value.status === 'ID') {
+                        $('#bay6C').css({fill: "#ff7f7f"});
+                      }
+                      else if (value.status === 'PR') {
+                        $('#bay6C').css({fill: "#c2de80"});
+                      }
+                      else if (value.status === 'MA') {
+                        $('#bay6C').css({fill: "#9ac3f5"});
+                      }
+                      })
+
+            
+
+
             this.bay7 =  this._toolsListed.filter(data=>{
               return data.bay_number==7 && data.is_active == true
             });
@@ -217,42 +274,42 @@ export class BayhomeComponent implements OnInit {
 
 
                
-                this.bay11A =  this._toolsListed.filter(data=>{
-                  return data.bay_number=='11A' && data.is_active == true
+                this.bay11 =  this._toolsListed.filter(data=>{
+                  return data.bay_number=='11' && data.is_active == true
                 });
-                  this.bay11A.forEach(function (value) {
+                  this.bay11.forEach(function (value) {
                   if(value.status === 'IN'){
-                    $('#bay11A').css({fill: "#ffff80"});
+                    $('#bay11').css({fill: "#ffff80"});
                   }
                   else if (value.status === 'ID') {
-                    $('#bay11A').css({fill: "#ff7f7f"});
+                    $('#bay11').css({fill: "#ff7f7f"});
                   }
                   else if (value.status === 'PR') {
-                    $('#bay11A').css({fill: "#c2de80"});
+                    $('#bay11').css({fill: "#c2de80"});
                   }
                   else if (value.status === 'MA') {
-                    $('#bay11A').css({fill: "#9ac3f5"});
+                    $('#bay11').css({fill: "#9ac3f5"});
                   }
                   })
 
 
-                  this.bay11B =  this._toolsListed.filter(data=>{
-                    return data.bay_number=='11B' && data.is_active == true
-                  });
-                    this.bay11B.forEach(function (value) {
-                    if(value.status === 'IN'){
-                      $('#bay11B').css({fill: "#ffff80"});
-                    }
-                    else if (value.status === 'ID') {
-                      $('#bay11B').css({fill: "#ff7f7f"});
-                    }
-                    else if (value.status === 'PR') {
-                      $('#bay11B').css({fill: "#c2de80"});
-                    }
-                    else if (value.status === 'MA') {
-                      $('#bay11B').css({fill: "#9ac3f5"});
-                    }
-                    })
+                  // this.bay11B =  this._toolsListed.filter(data=>{
+                  //   return data.bay_number=='11B' && data.is_active == true
+                  // });
+                  //   this.bay11B.forEach(function (value) {
+                  //   if(value.status === 'IN'){
+                  //     $('#bay11B').css({fill: "#ffff80"});
+                  //   }
+                  //   else if (value.status === 'ID') {
+                  //     $('#bay11B').css({fill: "#ff7f7f"});
+                  //   }
+                  //   else if (value.status === 'PR') {
+                  //     $('#bay11B').css({fill: "#c2de80"});
+                  //   }
+                  //   else if (value.status === 'MA') {
+                  //     $('#bay11B').css({fill: "#9ac3f5"});
+                  //   }
+                  //   })
 
 
 
@@ -635,7 +692,7 @@ export class BayhomeComponent implements OnInit {
                         })
 
                     this.bay33 =  this._toolsListed.filter(data=>{
-                      return data.bay_number==33 && data.is_active == true
+                      return data.bay_number==32 && data.is_active == true
                     });
                       this.bay33.forEach(function (value) {
                       if(value.status === 'IN'){
