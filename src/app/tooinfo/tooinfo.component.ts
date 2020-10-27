@@ -469,6 +469,11 @@ callDateApply(ev, picker){
             stacking: 'percent'
         }
     },
+
+    credits: {
+      enabled: false
+   },
+
     series: [{
         name: 'Productive',
         data: _prdata
